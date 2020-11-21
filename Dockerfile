@@ -1,4 +1,4 @@
-FROM pastimes/alpine-erlang:23.0.4
+FROM pastimes/alpine-erlang:23.1.4
 
 MAINTAINER Paul Schoenfelder <paulschoenfelder@gmail.com>
 
@@ -6,8 +6,8 @@ MAINTAINER Paul Schoenfelder <paulschoenfelder@gmail.com>
 # is updated with the current date. It will force refresh of all
 # of the base images and things like `apt-get update` won't be using
 # old cached versions when the Dockerfile is built.
-ENV REFRESHED_AT=2020-11-06 \
-    ELIXIR_VERSION=v1.10.4 \
+ENV REFRESHED_AT=2020-11-20 \
+    ELIXIR_VERSION=v1.11.2 \
     MIX_HOME=/opt/mix \
     HEX_HOME=/opt/hex
 
